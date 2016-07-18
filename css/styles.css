@@ -73,10 +73,13 @@ body {
 
 .sixth-face {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
-/*.sixth-face .column {
-  justify-content: space-between;
-}*/
+.sixth-face .column:first-child {
+  flex-direction: column;
+}
+
+.sixth-face .column:last-child {
+    flex-direction: column;
+}
