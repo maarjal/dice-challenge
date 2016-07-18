@@ -1,0 +1,82 @@
+.first-face, .second-face, .third-face, .fourth-face, .fifth-face, .sixth-face {
+  width: 10em;
+  height: 10em;
+  border: 1px solid black;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.pip {
+  display: inline-block;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  background: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 0.7em;
+
+}
+
+.first-face:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.second-face {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.second-face .pip:last-child {
+  align-self: flex-end;
+}
+
+.third-face {
+  display: flex;
+  flex-direction: row;
+}
+
+.third-face .pip:nth-child(2) {
+  align-self:center;
+}
+
+.third-face .pip:last-child {
+  align-self: flex-end;
+}
+
+.fourth-face {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fifth-face{
+  display: flex;
+  flex-direction: column;
+}
+.fifth-face .column:nth-child(2) {
+  align-self: center;
+}
+
+.sixth-face {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*.sixth-face .column {
+  justify-content: space-between;
+}*/
